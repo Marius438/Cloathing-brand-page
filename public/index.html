@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Fashion | Premium Clothing</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .product-card {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .product-card h3 {
+            margin: 1rem 0;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .add-to-cart {
+            width: 100%;
+            padding: 0.8rem;
+            background: black;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .add-to-cart:hover {
+            background: #333;
+        }
+    </style>
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="logo">MODERN FASHION</div>
+        <div class="nav-links">
+            <a href="#men">Men</a>
+            <a href="#women">Women</a>
+            <a href="#kids">Kids</a>
+            <a href="#sale">Sale</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search products...">
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Premium Fashion Essentials</h1>
+        <p>Discover our latest collection</p>
+    </header>
+
+    <section class="featured-sections">
+        <div class="section-container">
+            <div class="featured-section new-arrivals">
+                <h2>New Arrivals</h2>
+                <!-- Product grid will go here -->
+            </div>
+            <div class="featured-section trending">
+                <h2>Trending Now</h2>
+                <!-- Product grid will go here -->
+            </div>
+            <div class="featured-section best-sellers">
+                <h2>Best Sellers</h2>
+                <!-- Product grid will go here -->
+            </div>
+        </div>
+    </section>
+    <script src="/js/my-project.js"></script>
+</body>
+</html> 
